@@ -1,8 +1,16 @@
 # Bootdumper
 Ever wondered what that sneaky BIOS smuggles into your memory when you aren't looking?
 Here's a cool boot tool to sate your paranoia!
-## Instructions for building:
+## Building:
+```
 make
-## Instructions for running:
-make sure you read the make file and set up the needed disk image for the output
+```
+## Running:
+Create an output image whatever size you like
+```
+qemu-img create output/floppy.img your_size_here
+```
+Start the virtual machine
+```
 make run
+```
